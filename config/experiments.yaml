@@ -1,0 +1,66 @@
+experiments:
+  secure_local_llm:
+    task_file: config/prompts/task_prompt.txt
+    max_turns: 12
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+  bielik_smoke:
+    task_file: config/prompts/task_prompt.txt
+    max_turns: 1
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+    agent_overrides:
+      model_a:
+        max_tokens: 160
+      model_b:
+        max_tokens: 160
+  gemma_smoke:
+    task_file: config/prompts/task_prompt.txt
+    max_turns: 1
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+    agent_overrides:
+      model_a:
+        model: gemma_gguf
+        max_tokens: 160
+      model_b:
+        model: gemma_gguf
+        max_tokens: 160
+  history_architecture_mixed_smoke:
+    task_file: config/prompts/task_history_architecture.txt
+    max_turns: 1
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+    agent_overrides:
+      model_a:
+        model: local_gguf
+        prompt_file: config/prompts/persona_bielik_literat.txt
+        max_tokens: 160
+      model_b:
+        model: gemma_gguf
+        prompt_file: config/prompts/persona_gemma_architekt.txt
+        max_tokens: 160
+  history_architecture_mixed_long:
+    task_file: config/prompts/task_history_architecture.txt
+    max_turns: 3
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+    agent_overrides:
+      model_a:
+        model: local_gguf
+        prompt_file: config/prompts/persona_bielik_literat.txt
+        max_tokens: 160
+      model_b:
+        model: gemma_gguf
+        prompt_file: config/prompts/persona_gemma_architekt.txt
+        max_tokens: 160
+  dialogue_semantic_baseline:
+    task_file: dialogue_tests/prompts/task_semantic_direction.txt
+    max_turns: 3
+    consensus_marker: "[KONIEC_DYSKUSJI]"
+    agent_overrides:
+      model_a:
+        model: local_gguf
+        prompt_file: dialogue_tests/prompts/persona_narrator.txt
+        temperature: 0.2
+        max_tokens: 180
+      model_b:
+        model: gemma_gguf
+        prompt_file: dialogue_tests/prompts/persona_analyst.txt
+        temperature: 0.2
+        max_tokens: 180

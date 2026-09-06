@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/logs/*
+!data/logs/.gitkeep
+data/sqlite/*
+!data/sqlite/.gitkeep
+data/models/
+dialogue_tests/output/*
+!dialogue_tests/output/.gitkeep

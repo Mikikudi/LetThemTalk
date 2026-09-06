@@ -1,0 +1,5 @@
+Zaprojektujcie bezpieczny, lokalny serwer LLM dla małej firmy. Model A ma
+przedstawić zagrożenia i wymagania bezpieczeństwa. Model B ma proponować
+rozwiązania oraz kompromisy. Dyskutujcie, zadawajcie pytania i wypracujcie
+wspólny plan. Gdy uzgodnicie plan, Model B kończy odpowiedź znacznikiem
+[KONIEC_DYSKUSJI].

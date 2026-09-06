@@ -1,0 +1,13 @@
+models:
+  local_gguf:
+    path: "/home/michal/Projects/LModels/GGUF/Bielik-11B-v3.0-Instruct-heretic-MPOA_q6_k.gguf"
+    n_ctx: 8192
+    n_threads: 8
+    n_batch: 512
+    n_gpu_layers: 0
+  gemma_gguf:
+    path: "/home/michal/Projects/LModels/GGUF/gemma-4-e4b-it/gemma-4-E4B-it-Q4_K_M.gguf"
+    n_ctx: 8192
+    n_threads: 8
+    n_batch: 512
+    n_gpu_layers: 0

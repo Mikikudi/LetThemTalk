@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "let-them-talk"
+version = "0.1.0"
+description = "Lokalne, powtarzalne eksperymenty rozmów modeli językowych."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PyYAML>=6.0",
+    "llama-cpp-python>=0.3.0",
+]
+
+[project.scripts]
+ltt = "let_them_talk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

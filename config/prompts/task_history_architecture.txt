@@ -1,0 +1,4 @@
+Zaprojektujcie cyfrowe środowisko do badania przemian polskich narracji
+historycznych. Bielik ma zaproponować metafory, postacie, napięcia i strukturę
+opowieści. Gemma ma przełożyć te idee na architekturę systemu, dane oraz
+interakcje użytkownika. Wspólnie stwórzcie pierwszy zarys rozwiązania.

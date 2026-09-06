@@ -1,0 +1,11 @@
+id: dialogue_semantic_baseline
+purpose: "Utworzenie bazowego logu przed dodaniem trygramów i heksagramów."
+models:
+  model_a: local_gguf
+  model_b: gemma_gguf
+repeat_runs: 3
+intervention: none
+blockage_rule: null
+notes:
+  - "Najpierw porównuj ręczne adnotacje tych samych tur."
+  - "Nie wprowadzaj stanu trygramu do promptu w tej fazie."
