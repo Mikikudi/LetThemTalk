@@ -2,8 +2,7 @@
 
 Lokalne laboratorium do powtarzalnych dyskusji między modelami językowymi.
 
-Pierwsza wersja działa wyłącznie przez `llama-cpp-python` i modele GGUF. Nie
-uruchamia FLM ani NPU. Pakiety ONNX z Lemonade pozostają osobnym profilem
+Pierwsza wersja działa wyłącznie przez `llama-cpp-python` i modele GGUF. 
 runtime na późniejszy etap.
 
 ## Uruchomienie
