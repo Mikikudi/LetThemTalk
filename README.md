@@ -2,8 +2,7 @@
 
 Lokalne laboratorium do powtarzalnych dyskusji między modelami językowymi.
 
-Pierwsza wersja działa wyłącznie przez `llama-cpp-python` i modele GGUF. 
-runtime na późniejszy etap.
+Pierwsza wersja działa wyłącznie przez `llama-cpp-python` i modele GGUF.
 
 ## Uruchomienie
 
